@@ -32,17 +32,17 @@ Amazon API Gateway is used to create the API that the front-end interacts with. 
 
 ### Lambda Function
 
-We have one lambda function, send emails, which is integrated with our only one API gateway endpoint (POST /send), it has a resourced-based policy attached to it that allows API gateway to call it, and has a role that permits it to call SES for sending the emails.
+We have one lambda function, send emails, which is integrated with our only one API gateway endpoint (POST /send), it has a resource-based policy attached to it that allows API gateway to call it, and has a role that permits it to call SES for sending the emails.
 
 ### Simple Email Service (SES)
 
-Amazon SES is what is used to actually sending the emails.
+Amazon SES is what is used to actually send the emails.
 
 ### Security and Monitoring
 
 #### Identity and Access Management (IAM)
 
-IAM is used to manage permissions for resources and ensure secure access control. To adhere with the least privilege principle, a permission boundary is used where applicable.
+IAM is used to manage permissions for resources and ensure secure access control. To enforce the least privilege principle, a permission boundary is used where applicable.
 
 #### CloudTrail
 
